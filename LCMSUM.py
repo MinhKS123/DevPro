@@ -1,15 +1,16 @@
-import math
- 
-def lcmSum(n):
-    Sum = 0
-    for i in range(1, n + 1):
-        gcd = math.gcd(i, n)
-        lcm = (i * n) // gcd
-        Sum = Sum + lcm
-    return Sum
-list1 = []
-NoT = int(input())
-for i in range(1, NoT+1):
-    list1.append(int(input()))
-for x in range(0, NoT):
-    print(lcmSum(list1[x]))
+from math import gcd
+for hahahahahahahahahahahahahahahahahahahahahahahahahahahahahaha in range(int(input())):
+    n = int(input())
+    i = 1
+    cosum,ans = 0,0
+    while i*i <= n:
+        if n%i == 0:
+            ans += (i*n)//gcd(i,n)
+            cosum += i
+            if i != n//i:
+                j = n//i
+                ans += (j*n)//gcd(j,n)
+                cosum += j
+        i += 1
+    ans += n*((n*(n+1))//2-cosum)
+    print(ans)
