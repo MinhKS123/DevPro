@@ -44,4 +44,6 @@ listPrime = primes_sieve(n)
 for i in range (0, len(listPrime)-2):
     if listPrime[i]*listPrime[i+1]*listPrime[i+2] > a and listPrime[i]*listPrime[i+1]*listPrime[i+2] <= n:
         a = listPrime[i]*listPrime[i+1]*listPrime[i+2]
+    else:
+        a = -1
 print(a)
