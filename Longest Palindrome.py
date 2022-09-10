@@ -1,4 +1,4 @@
-# Oringinal code: GeeksforGeeks
+# Oringinal Author: GeeksforGeeks
 # Link to original: https://www.geeksforgeeks.org/manachers-algorithm-linear-time-longest-palindromic-substring-part-3-2/
 #  .__   __.   ______   .___________.   .___  ___. ____    ____      ______   ______    _______   _______ 
 #  |  \ |  |  /  __  \  |           |   |   \/   | \   \  /   /     /      | /  __  \  |       \ |   ____|
