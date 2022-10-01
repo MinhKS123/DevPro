@@ -38,6 +38,5 @@ def fraction(a, b):
 str_a, str_b = input().split()
 a = int(str_a)
 b = int(str_b)
-for x in range(len(fraction(a, b))):
-    print(fraction(a, b)[x], end='')
-
+fr = str(Fraction(a, b))
+print(fr.replace('/', ' '))
