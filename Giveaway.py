@@ -25,10 +25,23 @@
 """ 
 
 
-def f(n):
-    if n == 1:
-        return 1
-    else:
-        return (n * (f(n-1)))
+def CountPairs(arr, n):
+    arr.sort()
+    count = 0
+    l = 0; r = n - 1
+    while (l < r):
+        if (arr[l] + arr[r] > 0):
+            count += (r - l)
+            r -= 1
+        else :
+            l += 1
+    return count 
+
+
 n = int(input())
-print(f(n))
+list_a = [int(i) for i in input().split()]
+list_b = [int(i) for i in input().split()]
+listRes = []
+for i in range(0, n):
+    listRes.append(list_a[i]-list_b[i])
+print(CountPairs(listRes, len(listRes)))
